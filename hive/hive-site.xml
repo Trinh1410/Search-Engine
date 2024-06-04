@@ -1,0 +1,56 @@
+<configuration>
+  <property>
+    <name>javax.jdo.option.ConnectionURL</name>
+    <value>jdbc:mysql://mysql:3306/hive?createDatabaseIfNotExist=true</value>
+    <description>JDBC connect string for a JDBC metastore</description>
+  </property>
+
+  <property>
+    <name>javax.jdo.option.ConnectionDriverName</name>
+    <value>com.mysql.cj.jdbc.Driver</value>
+    <description>Driver class name for a JDBC metastore</description>
+  </property>
+
+  <property>
+    <name>javax.jdo.option.ConnectionUserName</name>
+    <value>hiveuser</value>
+    <description>username to use against metastore database</description>
+  </property>
+
+  <property>
+    <name>javax.jdo.option.ConnectionPassword</name>
+    <value>hivepassword</value>
+    <description>password to use against metastore database</description>
+  </property>
+
+  <property>
+    <name>datanucleus.autoCreateSchema</name>
+    <value>true</value>
+    <description>create necessary schema automatically</description>
+  </property>
+
+  <property>
+    <name>datanucleus.fixedDatastore</name>
+    <value>false</value>
+    <description>Schema auto-creation requires a non-fixed datastore</description>
+  </property>
+
+  <property>
+    <name>datanucleus.autoCreateTables</name>
+    <value>true</value>
+    <description>Auto create tables</description>
+  </property>
+
+  <property>
+    <name>datanucleus.autoCreateColumns</name>
+    <value>true</value>
+    <description>Auto create columns</description>
+  </property>
+
+  <property>
+    <name>datanucleus.autoCreateConstraints</name>
+    <value>true</value>
+    <description>Auto create constraints</description>
+  </property>
+</configuration>
+
